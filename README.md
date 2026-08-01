@@ -1,28 +1,45 @@
 # ShopSphere Retail Sales Analytics using PostgreSQL
 
-## Project Overview
+## Business Problem
 
-ShopSphere Retail Sales Analytics is an end-to-end SQL portfolio project built using PostgreSQL. It simulates a real-world retail business database and demonstrates how SQL can be used to solve practical business problems.
+ShopSphere is a retail company that collects transactional data from customers, orders, products, payments, employees, suppliers, and returns.
 
-The project focuses on analyzing sales performance, customer behavior, product performance, employee productivity, and revenue trends through business-driven SQL queries.
+Although large volumes of data are generated daily, the business lacks a centralized analytical process to answer important operational and strategic questions.
 
-The database consists of ten interconnected tables representing different aspects of a retail business, including customers, orders, products, categories, employees, suppliers, payments, returns, and shippers.
+As a data analyst, the objective of this project is to transform raw transactional data into actionable business insights using SQL.
 
-This project demonstrates how SQL can transform raw transactional data into meaningful business insights that support strategic decision-making.
+## Project Objectives
 
-## Business Objective
+The analysis aims to:
 
-The objective of this project is to analyze retail sales data and answer key business questions using SQL.
+- Monitor overall business performance through executive KPIs.
+- Identify top-performing products and categories.
+- Analyze customer purchasing behavior and lifetime value.
+- Evaluate employee sales performance.
+- Track monthly sales trends and revenue growth.
+- Identify products contributing most to revenue.
+- Segment customers for targeted marketing using RFM analysis.
 
-The analysis focuses on:
+## Database Overview
 
-- Monitoring overall business performance
-- Tracking sales trends over time
-- Identifying top-performing products
-- Measuring customer lifetime value
-- Ranking customers based on revenue
-- Evaluating employee performance
-- Performing Pareto (80/20) analysis
+The project is built on a normalized relational database consisting of **10 interconnected tables** that simulate a real-world retail sales environment.
+
+| Table | Description |
+|--------|-------------|
+| Customers | Customer information and demographics |
+| Orders | Customer order records |
+| Order_Items | Products included in each order |
+| Products | Product catalog |
+| Categories | Product categories |
+| Employees | Employees responsible for processing orders |
+| Suppliers | Supplier information |
+| Payments | Payment details for orders |
+| Returns | Returned products |
+| Stores | Store information |
+
+The tables are connected using **Primary Keys** and **Foreign Keys** to maintain referential integrity and accurately represent business relationships.
+
+---
 
 ## Technologies Used
 
@@ -32,26 +49,11 @@ The analysis focuses on:
 - Git
 - GitHub
 
-## Database Schema
+---
 
-The project uses a normalized relational database consisting of 10 interconnected tables.
+## SQL Concepts Demonstrated
 
-### Tables
-
-- Customers
-- Orders
-- Order_Items
-- Products
-- Categories
-- Employees
-- Suppliers
-- Payments
-- Returns
-- Stores
-
-The schema is designed using primary keys and foreign keys to maintain referential integrity and simulate a real-world retail database.
-
-## SQL Skills Demonstrated
+This project demonstrates practical usage of SQL for business analytics, including:
 
 - Data Retrieval
 - Filtering and Sorting
@@ -67,55 +69,99 @@ The schema is designed using primary keys and foreign keys to maintain referenti
 - Ranking Functions
 - Running Totals
 - Rolling Averages
-- LAG and LEAD
-- FIRST_VALUE and LAST_VALUE
-- Pareto Analysis
+- LAG() and LEAD()
+- FIRST_VALUE() and LAST_VALUE()
+- Pareto (80/20) Analysis
 - RFM Customer Segmentation
 
-## Business Analyses Performed
+---
 
-### Executive Analytics
+## Analytical Solutions
 
-- Executive KPI Dashboard
-- Revenue by State
-- Monthly Sales Trend
+The project focuses on solving real business problems across multiple business domains.
 
-### Product Analytics
+### Executive Performance
 
-- Top Selling Products
-- Category Performance
-- Top Products by Category
-- Sales Contribution Analysis
-- Pareto (80/20) Analysis
+- Monitored overall business performance using executive KPIs.
+- Measured revenue, customer base, order volume, and returned items.
+
+### Sales Analysis
+
+- Analyzed revenue across different states.
+- Identified monthly sales trends.
+- Calculated cumulative revenue and month-over-month growth.
+
+### Product Analysis
+
+- Identified top-selling products.
+- Evaluated category performance.
+- Ranked the best-performing products within each category.
+- Determined which products contribute to 80% of total revenue using Pareto analysis.
 
 ### Customer Analytics
 
-- Top Customers
-- Customer Lifetime Value (CLV)
-- Customer Ranking
-- Customer Retention Analysis
-- Purchase Gap Analysis
-- First & Last Purchase Analysis
-- RFM Customer Segmentation
+- Identified high-value customers.
+- Calculated Customer Lifetime Value (CLV).
+- Ranked customers based on revenue contribution.
+- Analyzed customer purchasing intervals and retention.
+- Segmented customers using RFM analysis for targeted marketing strategies.
 
-### Employee Analytics
+### Employee Performance
 
-- Employee Performance
+- Evaluated employee contribution based on revenue generated and orders handled.
 
-### Time Series Analytics
+---
 
-- Running Revenue
-- Month-over-Month Growth
-- Rolling 3-Month Average
+## Business Value Delivered
 
-## Project Highlights
+The analysis provides actionable insights that can help business stakeholders:
 
-- Designed a normalized retail database with 10 related tables.
-- Solved 19 real-world business problems using SQL.
-- Applied advanced SQL concepts including CTEs, Window Functions, Ranking Functions, and Analytical Queries.
-- Performed customer segmentation using RFM analysis.
-- Implemented Pareto (80/20) analysis to identify high-impact products.
-- Generated actionable business insights from transactional retail data.
-- Segmenting customers using RFM analysis
+- Monitor business performance through executive KPIs.
+- Identify high-performing products and categories.
+- Recognize the company's most valuable customers.
+- Improve customer retention through behavioral analysis.
+- Optimize marketing campaigns using RFM segmentation.
+- Focus inventory planning on products driving the majority of revenue.
+- Monitor sales growth and identify seasonal trends.
+- Support strategic business decisions using data-driven insights.
 
-These analyses help business stakeholders make informed decisions regarding marketing, inventory management, customer retention, and revenue optimization.
+---
+
+## Repository Structure
+
+```
+ShopSphere-Retail-Sales-Analytics/
+│
+├── Database/
+│   ├── Create_Tables.sql
+│   ├── Insert_Data.sql
+│
+├── Business Analysis/
+│   ├── Executive_Performance.sql
+│   ├── Sales_Analysis.sql
+│   ├── Customer_Analytics.sql
+│   ├── Product_Analytics.sql
+│   ├── Employee_Analytics.sql
+│   ├── Revenue_Optimization.sql
+│
+├── Images/
+│
+└── README.md
+```
+
+---
+
+## Future Enhancements
+
+The project will be extended by:
+
+- Developing an interactive Power BI dashboard.
+- Performing exploratory data analysis using Python (Pandas & Matplotlib).
+- Implementing SQL Views for reporting.
+- Expanding the project into a complete end-to-end retail analytics solution.
+
+---
+
+## Author
+
+**Shreya K**
