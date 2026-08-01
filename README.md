@@ -40,7 +40,11 @@ The project is built on a normalized relational database consisting of **10 inte
 The tables are connected using **Primary Keys** and **Foreign Keys** to maintain referential integrity and accurately represent business relationships.
 
 ---
+## Entity Relationship Diagram
 
+![ER Diagram](images/er_diagram.png)
+
+---
 ## Technologies Used
 
 - PostgreSQL
