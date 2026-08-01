@@ -40,7 +40,13 @@ The project is built on a normalized relational database consisting of **10 inte
 The tables are connected using **Primary Keys** and **Foreign Keys** to maintain referential integrity and accurately represent business relationships.
 
 ---
+## Entity Relationship Diagram
 
+<p align="center">
+  <img src="Images/ER_Diagram.png" alt="ShopSphere ER Diagram" width="900">
+</p>
+
+---
 ## Technologies Used
 
 - PostgreSQL
