@@ -42,7 +42,7 @@ The tables are connected using **Primary Keys** and **Foreign Keys** to maintain
 ---
 ## Entity Relationship Diagram
 
-![ER Diagram](images/er_diagram.png)
+![ER Diagram](Images/er_diagram.png)
 
 ---
 ## Technologies Used
