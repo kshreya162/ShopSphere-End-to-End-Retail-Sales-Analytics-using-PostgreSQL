@@ -42,9 +42,7 @@ The tables are connected using **Primary Keys** and **Foreign Keys** to maintain
 ---
 ## Entity Relationship Diagram
 
-<p align="center">
-  <img src="Images/ER_Diagram.png" alt="ShopSphere ER Diagram" width="900">
-</p>
+![ER Diagram](images/er_diagram.png)
 
 ---
 ## Technologies Used
