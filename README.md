@@ -1,12 +1,11 @@
-# ShopSphere Retail Sales Analytics using PostgreSQL
+# ShopSphere Retail Sales Analytics using PostgreSQL & Power BI
 
 ## Business Problem
 
 ShopSphere is a retail company that collects transactional data from customers, orders, products, payments, employees, suppliers, and returns.
-
 Although large volumes of data are generated daily, the business lacks a centralized analytical process to answer important operational and strategic questions.
 
-As a data analyst, the objective of this project is to transform raw transactional data into actionable business insights using SQL.
+As a Data Analyst, the objective of this project is to transform raw retail transaction data into actionable business insights by designing a relational database in PostgreSQL, performing advanced SQL analysis, and developing interactive Power BI dashboards for business decision-making.
 
 ## Project Objectives
 
@@ -19,6 +18,22 @@ The analysis aims to:
 - Track monthly sales trends and revenue growth.
 - Identify products contributing most to revenue.
 - Segment customers for targeted marketing using RFM analysis.
+
+## Project Workflow
+
+CSV Dataset
+        ↓
+PostgreSQL Database
+        ↓
+SQL Business Analysis
+        ↓
+Power BI Data Modeling
+        ↓
+DAX Measures
+        ↓
+Interactive Dashboards
+        ↓
+Business Insights
 
 ## Database Overview
 
@@ -47,12 +62,20 @@ The tables are connected using **Primary Keys** and **Foreign Keys** to maintain
 ---
 ## Technologies Used
 
+### Database & Querying
 - PostgreSQL
-- pgAdmin 4
 - SQL
+- pgAdmin 4
+
+### Business Intelligence
+- Microsoft Power BI
+- Power Query
+- DAX
+- Data Modeling
+
+### Version Control
 - Git
 - GitHub
-
 ---
 
 ## SQL Concepts Demonstrated
@@ -78,6 +101,38 @@ This project demonstrates practical usage of SQL for business analytics, includi
 - Pareto (80/20) Analysis
 - RFM Customer Segmentation
 
+---
+## Power BI Dashboard
+
+The SQL analysis was transformed into an interactive Business Intelligence solution using Microsoft Power BI.
+
+### Dashboard Pages
+
+🏠 Home
+
+📊 Retail Performance Overview
+
+📈 Sales Performance
+
+👥 Customer Analytics
+
+📦 Product & Inventory Analytics
+
+🔄 Returns & Refund Analysis
+
+---
+## DAX Measures
+
+Developed dynamic DAX measures for:
+- Total Revenue
+- Total Orders
+- Total Customers
+- Average Order Value
+- Refund Amount
+- Average Customer Spend
+- Return Rate
+- Best Performing Employee
+- Low Stock Products
 ---
 
 ## Analytical Solutions
@@ -128,43 +183,36 @@ The analysis provides actionable insights that can help business stakeholders:
 - Focus inventory planning on products driving the majority of revenue.
 - Monitor sales growth and identify seasonal trends.
 - Support strategic business decisions using data-driven insights.
+- Enabled interactive dashboard exploration using filters, slicers, and page navigation.
 
 ---
 
 ## Repository Structure
 
 ```
-ShopSphere-Retail-Sales-Analytics/
+ShopSphere-End-to-End-Retail-Analytics/
+
+│── Database/
 │
-├── Database/
-│   ├── Create_Tables.sql
-│   ├── Insert_Data.sql
+│── Business Analysis/
 │
-├── Business Analysis/
-│   ├── Executive_Performance.sql
-│   ├── Sales_Analysis.sql
-│   ├── Customer_Analytics.sql
-│   ├── Product_Analytics.sql
-│   ├── Employee_Analytics.sql
-│   ├── Revenue_Optimization.sql
+│── Power BI/
+│      ShopSphere_Retail_Analytics_Dashboard.pbix
 │
-├── Images/
+│── Dashboard Screenshots/
+│      Home.png
+│      Retail Performance Overview.png
+│      Sales Performance.png
+│      Customer Analytics.png
+│      Product & Inventory.png
+│      Returns & Refund Analysis.png
 │
-└── README.md
+│── Images/
+│
+│── README.md
 ```
 
----
 
-## Future Enhancements
-
-The project will be extended by:
-
-- Developing an interactive Power BI dashboard.
-- Performing exploratory data analysis using Python (Pandas & Matplotlib).
-- Implementing SQL Views for reporting.
-- Expanding the project into a complete end-to-end retail analytics solution.
-
----
 
 ## Author
 
