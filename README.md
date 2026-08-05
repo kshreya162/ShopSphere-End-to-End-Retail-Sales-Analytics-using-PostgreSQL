@@ -1,5 +1,9 @@
 # ShopSphere Retail Sales Analytics using PostgreSQL & Power BI
 
+## Project Overview
+
+This project demonstrates an end-to-end Retail Analytics solution built using PostgreSQL and Microsoft Power BI. Starting from a normalized relational database, advanced SQL queries were used to solve real-world business problems, followed by interactive Power BI dashboards to visualize KPIs, trends, customer behavior, product performance, inventory insights, and returns analysis.  
+
 ## Business Problem
 
 ShopSphere is a retail company that collects transactional data from customers, orders, products, payments, employees, suppliers, and returns.
@@ -10,7 +14,6 @@ As a Data Analyst, the objective of this project is to transform raw retail tran
 ## Project Objectives
 
 The analysis aims to:
-
 - Monitor overall business performance through executive KPIs.
 - Identify top-performing products and categories.
 - Analyze customer purchasing behavior and lifetime value.
@@ -21,19 +24,27 @@ The analysis aims to:
 
 ## Project Workflow
 
+```text
 CSV Dataset
-        ↓
+      │
+      ▼
 PostgreSQL Database
-        ↓
+      │
+      ▼
 SQL Business Analysis
-        ↓
+      │
+      ▼
 Power BI Data Modeling
-        ↓
+      │
+      ▼
 DAX Measures
-        ↓
+      │
+      ▼
 Interactive Dashboards
-        ↓
+      │
+      ▼
 Business Insights
+```
 
 ## Database Overview
 
@@ -57,7 +68,7 @@ The tables are connected using **Primary Keys** and **Foreign Keys** to maintain
 ---
 ## Entity Relationship Diagram
 
-![ER Diagram](images/er_diagram.png)
+![ER Diagram](images/ER_Diagram.png)
 
 ---
 ## Technologies Used
@@ -106,21 +117,32 @@ This project demonstrates practical usage of SQL for business analytics, includi
 
 The SQL analysis was transformed into an interactive Business Intelligence solution using Microsoft Power BI.
 
-### Dashboard Pages
+## Dashboard Preview
 
-🏠 Home
+### 🏠 Home
 
-📊 Retail Performance Overview
+![Home](images/Home.png)
 
-📈 Sales Performance
+### 📊 Retail Performance Overview
 
-👥 Customer Analytics
+![Retail Performance Overview](images/Retail_Performance_Overview.png)
 
-📦 Product & Inventory Analytics
+### 📈 Sales Performance
 
-🔄 Returns & Refund Analysis
+![Sales Performance](images/Sales_Performance.png)
 
----
+### 👥 Customer Analytics
+
+![Customer Analytics](images/Customer_Analytics.png)
+
+### 📦 Product & Inventory Analytics
+
+![Products and Inventory Analytics](images/Products_Inventory_analytics.png)
+
+### 🔄 Returns & Refund Analysis
+
+![Returns and Refund Analytics](images/Return_Refund_analytics.png)
+
 ## DAX Measures
 
 Developed dynamic DAX measures for:
