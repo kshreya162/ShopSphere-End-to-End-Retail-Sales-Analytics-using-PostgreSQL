@@ -1,8 +1,13 @@
-# ShopSphere Retail Sales Analytics using PostgreSQL & Power BI
+# ShopSphere End-to-End Sales Analytics using PostgreSQL & Power BI
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge)
+![DAX](https://img.shields.io/badge/DAX-005571?style=for-the-badge)
 
 ## Project Overview
 
-This project demonstrates an end-to-end Retail Analytics solution built using PostgreSQL and Microsoft Power BI. Starting from a normalized relational database, advanced SQL queries were used to solve real-world business problems, followed by interactive Power BI dashboards to visualize KPIs, trends, customer behavior, product performance, inventory insights, and returns analysis.  
+This project demonstrates an end-to-end Retail Analytics solution built using PostgreSQL and Microsoft Power BI. The project is built on a normalized relational database consisting of **10 interconnected tables**, **2,000+ orders**, **1,000 customers**, **100 products**, and multiple business entities that simulate a real-world retail sales environment.
 
 ## Business Problem
 
@@ -83,6 +88,7 @@ The tables are connected using **Primary Keys** and **Foreign Keys** to maintain
 - Power Query
 - DAX
 - Data Modeling
+- Data Visualization
 
 ### Version Control
 - Git
@@ -143,9 +149,18 @@ The SQL analysis was transformed into an interactive Business Intelligence solut
 
 ![Returns and Refund Analytics](images/Return_Refund_Analytics.png)
 
+## Dashboard Features
+
+- Interactive page navigation
+- Dynamic KPI cards
+- Cross-filtering between visuals
+- Drill-down analysis
+- Slicers for year, category, supplier, employee, customer, and store
+- Business-focused dashboard design
+
 ## DAX Measures
 
-Developed dynamic DAX measures for:
+Developed reusable DAX measures for:
 - Total Revenue
 - Total Orders
 - Total Customers
@@ -157,7 +172,7 @@ Developed dynamic DAX measures for:
 - Low Stock Products
 ---
 
-## Analytical Solutions
+## Business Solution
 
 The project focuses on solving real business problems across multiple business domains.
 
@@ -216,12 +231,14 @@ ShopSphere-End-to-End-Retail-Analytics/
 
 │── Database/
 │
-│── Business Analysis/
-│
 │── Power BI/
 │      ShopSphere_Retail_Analytics_Dashboard.pbix
+|
+│── SQL Analysis/
 │
-│── Dashboard Screenshots/
+│
+│── Images/
+|      ER_Diagram.png
 │      Home.png
 │      Retail Performance Overview.png
 │      Sales Performance.png
@@ -229,8 +246,8 @@ ShopSphere-End-to-End-Retail-Analytics/
 │      Product & Inventory.png
 │      Returns & Refund Analysis.png
 │
-│── Images/
-│
+|── LICENSE
+|
 │── README.md
 ```
 
