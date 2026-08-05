@@ -137,11 +137,11 @@ The SQL analysis was transformed into an interactive Business Intelligence solut
 
 ### 📦 Product & Inventory Analytics
 
-![Products and Inventory Analytics](images/Products_Inventory_analytics.png)
+![Products and Inventory Analytics](images/Product_Inventory_Analytics.png)
 
 ### 🔄 Returns & Refund Analysis
 
-![Returns and Refund Analytics](images/Return_Refund_analytics.png)
+![Returns and Refund Analytics](images/Return_Refund_Analytics.png)
 
 ## DAX Measures
 
